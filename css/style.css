@@ -167,9 +167,9 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Ponemos un color de fondo para el <body> */
+/* Ponemos un color de fondo para el <body> con un gradiente */
 .fondo-body{
-    background-color: #fc4903;
+    background-image: linear-gradient(red, orange);
 }
 
 
