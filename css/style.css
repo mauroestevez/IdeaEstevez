@@ -133,6 +133,8 @@ h1{
     margin: 0;
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
+    animation: swing;
+    animation-duration: 1s;
 }
 
 /* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
