@@ -95,7 +95,11 @@ li a{
 a:hover{
     background-color: black;
     color: white;
-    transition: .4s;
+    transition: .6s;
+}
+a:hover{
+    width: 180px;
+    transition: .6s;
 }
 
 /* Ocultamos el checkbox que utilizaremos para el menu desplegable. */
