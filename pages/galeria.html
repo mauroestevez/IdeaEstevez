@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minifanaticos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="fondo-body" class="grid">
+    <!-- Abrimos el encabezado -->
+    <header>
+        <!-- Armamos el menu navegable -->
+        <!-- Antes del <nav> colocamos un checkbox y un <label> (hamburguesa) para luego armar el menu desplegable mobile. -->
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../assets/boton-hamburguesa.png" alt="imagen-boton-menu"></label>
+        <nav class="grid__nav">
+            <ul class="main-menu">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="historia.html">Historia</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Cerramos el encazezado y comenzamos con el cuerpo principal -->
+    <main>
+        <section class="grid__main">
+            <!-- Ponemos los titulos y tambien las imagenes de la galeria, con sus respectivas clases -->
+            <h1>Algunas fotos de los modelitos...</h1>
+            <div class="imagenes-galeria">
+                <div>
+                    <h2 class="h2-galeria">Mini modelo antiguo:</h2>
+                    <img src="../assets/mini-viejo.jpg" alt="imagen-mini-cooper" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Mini descapotable:</h2>
+                    <img src="../assets/mini-descapotable.jpg" alt="imagen-mini-cooper" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Un mini en el desierto:</h2>
+                <img src="../assets/mini-desierto.jpg" alt="imagen-mini-cooper" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Un mini de juguete:</h2>
+                    <img src="../assets/mini-juguete.jpg" alt="imagen-juguete-mini-cooper" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">El interior de un Mini:</h2>
+                    <img src="../assets/mini-interior.jpg" alt="imagen-interior-mini" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Un mini limusina:</h2>
+                    <img src="../assets/mini-limusina.jpg" alt="imagen-mini-limusina" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">El baul de un mini:</h2>
+                    <img src="../assets/mini-baul.jpg" alt="imagen-baul-mini" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Un mini rosado:</h2>
+                    <img src="../assets/mini-rosado.jpg" alt="imagen-mini-rosado" class="imagen-galeria">
+                </div>
+                <div>
+                    <h2 class="h2-galeria">Dos minis al anochecer:</h2>
+                    <img src="../assets/minis-noche.jpg" alt="imagen-minis-denoche" class="imagen-galeria">
+                </div>
+            </div>
+        </section>    
+    </main>
+    <!-- Terminamos el cuerpo principal y arrancamos el pie de pagina -->
+    <footer class="grid__footer">
+        <div class="footer">
+            Copyright &copy; Minifanaticos. Todos los derechos reservados
+        </div>
+    </footer>
+    <!-- Terminamos el pie de pagina y cerramos el body -->
+</body>
+</html>

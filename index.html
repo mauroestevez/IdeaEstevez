@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minifanaticos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fondo-body" class="grid">
+    <!-- Abrimos el encabezado -->
+    <header>
+        <!-- Armamos el menu navegable -->
+        <!-- Antes del <nav> colocamos un checkbox y un <label> (hamburguesa) para luego armar el menu desplegable mobile. -->
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="assets/boton-hamburguesa.png" alt="imagen-boton-menu"></label>
+        <nav class="grid__nav">
+            <ul class="main-menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="pages/historia.html">Historia</a>
+                </li>
+                <li>
+                    <a href="pages/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="pages/ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Cerramos el encazezado y comenzamos con el cuerpo principal -->
+    <main>
+        <section class="grid__main">
+                <h1 class="h1-inicio">Mini fanáticos</h1>
+                <h2 class="h2-inicio">Un lugar de encuentro para los locos por el Mini...</h2>
+            <div class="imagenes-inicio">
+                <img src="assets/mini-rojo-1.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+                <img src="assets/mini-rojo-2.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+                <img src="assets/mini-rojo-3.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+                <img src="assets/mini-rojo-4.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+                <img src="assets/mini-rojo-5.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+                <img src="assets/mini-rojo-6.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
+            </div>
+        </section>
+    </main>
+    <!-- Terminamos el cuerpo principal y arrancamos el pie de pagina -->
+    <footer class="grid__footer">
+        <div class="footer">
+            Copyright &copy; Minifanaticos. Todos los derechos reservados
+        </div>
+    </footer>
+    <!-- Terminamos el pie de pagina y cerramos el body -->
+</body>
+</html>

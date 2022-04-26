@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minifanaticos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="fondo-body" class="grid">
+    <!-- Abrimos el encabezado -->
+    <header>
+        <!-- Armamos el menu navegable -->
+        <!-- Antes del <nav> colocamos un checkbox y un <label> (hamburguesa) para luego armar el menu desplegable mobile. -->
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../assets/boton-hamburguesa.png" alt="imagen-boton-menu"></label>
+        <nav class="grid__nav">
+            <ul class="main-menu">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="historia.html">Historia</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cerramos el encazezado y comenzamos con el cuerpo principal -->
+    <main>
+        <section class="grid__main">
+            <h1>Registrate para recibir info...</h1>
+            <h2>Los dias de juntada los avisamos por mail</h2>
+            <form>
+                <fieldset>
+                    <!-- Armamos el formulario con sus respectivas etiquetas y tambien colocamos algunas clases para dar estilos particulares -->
+                    <legend>Registrate aqui:</legend>
+                    <!-- Label e input para el nombre -->
+                    <div>
+                        <label for="nombre_apellido">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese aqui su nombre">
+                    </div>
+                    <!-- Label e input para el apellido -->
+                    <div>
+                        <label for="nombre_apellido">Apellido:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese aqui su apellido">
+                    </div>
+                    <!-- Label e input para el correo electrónico -->
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" placeholder="Ingrese aqui su correo electrónico">
+                    </div>
+                    <!-- Label e input para la contraseña -->
+                    <div>
+                        <label for="text">Contraseña:</label>
+                        <input type="password" name="password" placeholder="Ingrese aqui su contraseña">
+                    </div>
+                    <!-- Botón para limpiar el formulario -->
+                    <input type="reset" value="Limpiar formulario" class="boton-limpiar">
+                    <!-- Botón para enviar registrarse -->
+                    <input type="submit" value="Registrarme" class="boton">
+                    <!-- Botón para iniciar sesión -->
+                    <input type="submit" value="Iniciar sesión" class="boton"> 
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- Terminamos el cuerpo principal y arrancamos el pie de pagina -->
+    <footer class="grid__footer">
+        <div class="footer">
+            Copyright &copy; Minifanaticos. Todos los derechos reservados
+        </div>
+    </footer>
+    <!-- Terminamos el pie de pagina y cerramos el body -->
+</body>
+</html>
