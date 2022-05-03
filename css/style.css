@@ -61,6 +61,10 @@
 header{
     width: 100%;
 }
+.bg-color{
+    background-color: red;
+}
+
 
 /* Utilizamos Flex para acomodar los <li> dentro del <ul>. */
 .main-menu{
@@ -70,14 +74,9 @@ header{
     list-style: none;
 }
 
-/* Acomodamos un poco mas los <li>. */
-.main-menu li{
-    margin-top: 60px;
-    margin-left: 80px;
-}
-
 /* Customizamos los botones del menu. */
-li a{
+a{
+    margin: 5px;
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
@@ -240,38 +239,6 @@ fieldset input{
 
 /* Colocamos un "media queries" para que desde 480 pixeles para abajo acomode la web para una vista mobile */
 @media (max-width:480px) {
-    header label{
-        display: block;
-    }
-
-    /* Con esta clase y estas propiedades estamos logrando que el <nav> quede oculto en la izquierda. Con la utilizacion de un margin: .70. */
-    .grid__nav{
-        position: absolute;
-        width: 70%;
-        margin-top: 30px;
-        margin-left: -70%;
-        transition: all 0.5s;
-    }
-
-    li a{
-        width: 70%;
-        padding: 15px 20px 15px 20px;
-    }
-
-
-    .main-menu{
-        flex-direction: column;
-        background-color: red;
-        padding-bottom: 20px;
-        
-    }
-
-    /* Utilizamos la virgulilla para que cuando el checkbox marque "checked", el <nav> pase a tener un margin:0 y se vuelva a ver (creando asi un menu desplegable). */
-
-    #btn-menu:checked ~ .grid__nav {
-        margin-left: 0;
-        margin-top: 30px;
-    }
 
     /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
 

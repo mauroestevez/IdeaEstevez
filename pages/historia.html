@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minifanaticos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="fondo-body" class="grid">
     <!-- Abrimos el encabezado -->
     <header>
-        <!-- Armamos el menu navegable -->
-        <!-- Antes del <nav> colocamos un checkbox y un <label> (hamburguesa) para luego armar el menu desplegable mobile. -->
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="../assets/boton-hamburguesa.png" alt="imagen-boton-menu"></label>
-        <nav class="grid__nav">
-            <ul class="main-menu">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="ubicacion.html">Ubicación</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!-- Armamos el menu navegable utilizando Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark grid__nav">
+            <div class="container-fluid bg-color">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="navbar-brand" href="historia.html">Historia</a>
+                        <a class="navbar-brand" href="galeria.html">Galeria</a>
+                        <a class="navbar-brand" href="ubicacion.html">Ubicacion</a>
+                        <a class="navbar-brand" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Cerramos el encazezado y comenzamos con el cuerpo principal -->
     <main>
         <section class="grid__main">
-                <!-- Introducimos el articulo con sus respectivas etiquetas -->
+            <!-- Introducimos el articulo con sus respectivas etiquetas -->
             <article>
                 <!-- Introducimos un <h1>, con varios <h2> y sus respetivos <p> -->
                 <!-- A los <h2> le colocamos clases, para darle un estilo particular diferenciado de los demas <h2> -->
                 <h1>Historia del Mini Cooper, por José Antonio Durán.</h1>
                 <h2 class="h2-historia">Mini Clasic (1959)</h2>
                 <p>
-                    El Mini Cooper aparece por primera vez después de la crisis de la escasez de gasolina y la caída de las ventas de vehículos grandes.
+                    El Mini Cooper aparece por primera vez después de la crisis de la escasez de gasolina y la caída de
+                    las ventas de vehículos grandes.
                 </p>
                 <p>
-                    Su creador el ingeniero Alec Issigonis lo diseñó de tal manera que equipara motor transversal y solo pesaba 600 kg. Su motor era de 850 cc y generaba únicamente 34 caballos de fuerza.
+                    Su creador el ingeniero Alec Issigonis lo diseñó de tal manera que equipara motor transversal y solo
+                    pesaba 600 kg. Su motor era de 850 cc y generaba únicamente 34 caballos de fuerza.
                 </p>
                 <h2 class="h2-historia">Mini Cooper y Mini Cooper S. (1964)</h2>
                 <p>
-                    John Cooper amigo del creador del Classic (Issigonis) quien fuera constructor de la Formula Uno, hizo del Mini un vehículo de altas prestaciones así que aumentó de 848 cc hasta los 997 cc en 1961, vehículo que ganara el Rally de Montecarlo en los años 1964, 1965 y 1967.
+                    John Cooper amigo del creador del Classic (Issigonis) quien fuera constructor de la Formula Uno,
+                    hizo del Mini un vehículo de altas prestaciones así que aumentó de 848 cc hasta los 997 cc en 1961,
+                    vehículo que ganara el Rally de Montecarlo en los años 1964, 1965 y 1967.
                 </p>
                 <p>
-                    En marzo de 2000, Rover seguía sufriendo enormes pérdidas, y BMW decidió deshacerse de la mayoría de las empresas. . La venta masiva se completó en mayo de ese año para Rover y MG. Así que el último Cooper construido salía de la fila de producción el 4 de Octubre del 2000, para posteriormente pasar a manos de BMW.
+                    En marzo de 2000, Rover seguía sufriendo enormes pérdidas, y BMW decidió deshacerse de la mayoría de
+                    las empresas. . La venta masiva se completó en mayo de ese año para Rover y MG. Así que el último
+                    Cooper construido salía de la fila de producción el 4 de Octubre del 2000, para posteriormente pasar
+                    a manos de BMW.
                 </p>
                 <h2 class="h2-historia">MINI era con BMW</h2>
                 <p>
-                    Fue presentado como prototipo en el Autoshow de Paris en el año del 2000. Su diseño retro fue inspirado en el diseño del modelo original.
+                    Fue presentado como prototipo en el Autoshow de Paris en el año del 2000. Su diseño retro fue
+                    inspirado en el diseño del modelo original.
                 </p>
                 <h2 class="h2-historia">Mini Hatch (2001)</h2>
                 <p>
-                    Fue presentado oficialmente en el Auto Show de Detroit en el 2001.Inicialmente, las motorizaciones eran un gasolina de 1.6 litros de cilindrada de 90 caballos de fuerza.
+                    Fue presentado oficialmente en el Auto Show de Detroit en el 2001.Inicialmente, las motorizaciones
+                    eran un gasolina de 1.6 litros de cilindrada de 90 caballos de fuerza.
                 </p>
                 <p>
-                    Mini One D. Utilizando un motor 4 cilindros 1.4 litros a Diesel presentado dentro del Auto Show de Ginebra, en Marzo del 2003.
+                    Mini One D. Utilizando un motor 4 cilindros 1.4 litros a Diesel presentado dentro del Auto Show de
+                    Ginebra, en Marzo del 2003.
                 </p>
                 <h2 class="h2-historia">Mini Convertible (2005-2008)</h2>
                 <p>
@@ -77,34 +87,49 @@
                 </p>
                 <h2 class="h2-historia">Mini Clubman (2008-presente)</h2>
                 <p>
-                    Es quizá el modelo que más espacio interior aparenta, por el diseño que contempla los pirales A y B hacia adelante permitiendo tener un área de carga de prácticamente 260 litros. Cuenta con dos puertas que bien se abren de manera alternativa (Splitdoor).El nombre del Clubman proviene del modelo de 1970.
+                    Es quizá el modelo que más espacio interior aparenta, por el diseño que contempla los pirales A y B
+                    hacia adelante permitiendo tener un área de carga de prácticamente 260 litros. Cuenta con dos
+                    puertas que bien se abren de manera alternativa (Splitdoor).El nombre del Clubman proviene del
+                    modelo de 1970.
                 </p>
                 <h2 class="h2-historia">Mini Convertible (2009-presente)</h2>
                 <p>
-                    Esta segunda generación fue presentado en el Auto Show de Detroit en el 2009, los motores son los mismos ofrecidos en el Mini Hatch incluyendo la variante Diesel para el mercado Europeo.
+                    Esta segunda generación fue presentado en el Auto Show de Detroit en el 2009, los motores son los
+                    mismos ofrecidos en el Mini Hatch incluyendo la variante Diesel para el mercado Europeo.
                 </p>
                 <h2 class="h2-historia">Mini E (2009-2010)</h2>
                 <p>
-                    Se trata de un vehículo 100% eléctrico de tracción delantera que le permite una autonomía de 240 kilómetros (baterías ion-litio) y una velocidad máxima de 154 km/h. El Mini E es un proyecto demostrativo que anticipó la llegada de la submarca – i – por BMW. En México estuvo en manos de instituciones públicas y gubernamentales para su análisis.
+                    Se trata de un vehículo 100% eléctrico de tracción delantera que le permite una autonomía de 240
+                    kilómetros (baterías ion-litio) y una velocidad máxima de 154 km/h. El Mini E es un proyecto
+                    demostrativo que anticipó la llegada de la submarca – i – por BMW. En México estuvo en manos de
+                    instituciones públicas y gubernamentales para su análisis.
                 </p>
                 <h2 class="h2-historia">Mini Countryman (2011-presente)</h2>
                 <p>
-                    Sería el primer Mini de diseño tipo Crossover y tracción integral en las cuatro ruedas (All4). Tiene una distancia entre ejes mucho más larga. Sus capacidades le permiten ligeramente transitar por la terracería.
+                    Sería el primer Mini de diseño tipo Crossover y tracción integral en las cuatro ruedas (All4). Tiene
+                    una distancia entre ejes mucho más larga. Sus capacidades le permiten ligeramente transitar por la
+                    terracería.
                 </p>
                 <h2 class="h2-historia">Mini Coupé (2012-presente)</h2>
                 <p>
-                    Lo develó en el 2011, es el primer Mini con solo dos asientos del cual también es producido con la motorización John Cooper Works, gracias a un motor turbo de 208 caballos de fuerza.
+                    Lo develó en el 2011, es el primer Mini con solo dos asientos del cual también es producido con la
+                    motorización John Cooper Works, gracias a un motor turbo de 208 caballos de fuerza.
                 </p>
                 <h2 class="h2-historia">Mini GP (2013)</h2>
                 <p>
-                    Limitado solamente a 2000 unidades, este Mini es el más deportivo jamás creado, desarrolla 218 caballos de fuerza pesando únicamente 1,160 Kg, logrando el 0 a 100 Km/h en 6.3 segundos con una velocidad máxima de 242 Km/h, es la primera vez que se incorpora la suspensión regulable hasta por 20 mm en un Mini además de contar con todo el equipamiento John Cooper Works de serie.
+                    Limitado solamente a 2000 unidades, este Mini es el más deportivo jamás creado, desarrolla 218
+                    caballos de fuerza pesando únicamente 1,160 Kg, logrando el 0 a 100 Km/h en 6.3 segundos con una
+                    velocidad máxima de 242 Km/h, es la primera vez que se incorpora la suspensión regulable hasta por
+                    20 mm en un Mini además de contar con todo el equipamiento John Cooper Works de serie.
                 </p>
                 <h2 class="h2-historia">Mini Paceman (2013-presente)</h2>
                 <p>
-                    Es la versión Coupé del modelo Countryman, lo que lo vuelve oficialmente el séptimo modelo de la marca y el más reciente, su producción fue lanzada a partir del 2012 después de su debut en el Auto Show de Paris.
+                    Es la versión Coupé del modelo Countryman, lo que lo vuelve oficialmente el séptimo modelo de la
+                    marca y el más reciente, su producción fue lanzada a partir del 2012 después de su debut en el Auto
+                    Show de Paris.
                 </p>
             </article>
-                <!-- Cerramos el artículo -->
+            <!-- Cerramos el artículo -->
         </section>
     </main>
     <!-- Terminamos el cuerpo principal y arrancamos el pie de pagina -->
@@ -114,6 +139,9 @@
         </div>
     </footer>
     <!-- Terminamos el pie de pagina y cerramos el body -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

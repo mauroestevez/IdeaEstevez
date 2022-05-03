@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minifanaticos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,400&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="fondo-body" class="grid">
     <!-- Abrimos el encabezado -->
     <header>
-        <!-- Armamos el menu navegable -->
-        <!-- Antes del <nav> colocamos un checkbox y un <label> (hamburguesa) para luego armar el menu desplegable mobile. -->
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="assets/boton-hamburguesa.png" alt="imagen-boton-menu"></label>
-        <nav class="grid__nav">
-            <ul class="main-menu">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="pages/galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="pages/ubicacion.html">Ubicación</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!-- Armamos el menu navegable utilizando Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark grid__nav">
+            <div class="container-fluid bg-color">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="navbar-brand" href="pages/historia.html">Historia</a>
+                        <a class="navbar-brand" href="pages/galeria.html">Galeria</a>
+                        <a class="navbar-brand" href="pages/ubicacion.html">Ubicacion</a>
+                        <a class="navbar-brand" href="pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-
     </header>
     <!-- Cerramos el encazezado y comenzamos con el cuerpo principal -->
     <main>
         <section class="grid__main">
-                <h1 class="h1-inicio">Mini fanáticos</h1>
-                <h2 class="h2-inicio">Un lugar de encuentro para los locos por el Mini...</h2>
+            <h1 class="h1-inicio">Mini fanáticos</h1>
+            <h2 class="h2-inicio">Un lugar de encuentro para los locos por el Mini...</h2>
             <div class="imagenes-inicio">
                 <img src="assets/mini-rojo-1.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
                 <img src="assets/mini-rojo-2.jpg" alt="imagen-mini-rojo" class="imagen-inicio">
@@ -62,6 +61,9 @@
         </div>
     </footer>
     <!-- Terminamos el pie de pagina y cerramos el body -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
