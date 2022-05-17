@@ -1,0 +1,24 @@
+/* Comenzamos utilizando Grid para estructurar nuestro <body>. */
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+}
+
+/* Activamos Grid en el <nav>. */
+.grid__nav{
+    grid-area: nav;
+}
+
+/* Activamos Grid en el <main>.*/
+.grid__main{
+    grid-area: main;
+}
+
+/* Activamos Grid en el <footer>. */
+.grid__footer{
+    grid-area: footer;
+}

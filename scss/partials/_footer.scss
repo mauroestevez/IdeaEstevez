@@ -1,0 +1,8 @@
+/* Le damos estilo al <footer> utilizando una etiqueta y ademas los posicionamos donde queremos con el "position: absolute", utilizando el "relative" ya colocado en el <body> */
+.footer{
+    background-color: black;
+    color: white;
+    bottom: 0%; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}

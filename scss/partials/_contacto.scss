@@ -1,0 +1,39 @@
+/* Comenzamos a darle estilo a nuestro formulario utilizando box modeling y Flex dentro de la etiqueta <fieldset>. */
+form{
+    margin: 0 0 200px 300px;
+    width: 100%;
+    height: 500px;
+}
+fieldset{
+    border: none;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    legend{
+        font-size: x-large;
+    }
+    label{
+        display: block;
+    }
+    input{
+        padding: 10px 60px;
+        border: solid  black;
+        border-radius: 10px;
+    }
+}
+
+/* Utilizamos algunas clases para aplicar estilos especificos a los botones */
+.boton-limpiar{
+    width: 300px;
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+}
+.boton{
+    width: 320px;
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+}

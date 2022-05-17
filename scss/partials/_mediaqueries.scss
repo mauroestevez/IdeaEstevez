@@ -1,0 +1,157 @@
+
+
+
+
+/* Colocamos un "media queries" para que desde 320 pixeles para abajo acomode la web para una vista mobile vertical */
+@media (max-width:320px) {
+
+    /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+
+    iframe{
+        margin: 30px;
+        width: 75%;
+    }
+
+    form{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    fieldset{
+        margin: 20px;
+    }
+
+    div input{
+        padding: 10px 30px;
+        border: solid  black;
+        border-radius: 10px;
+    }
+
+    .boton-limpiar{
+        width: 200px;
+    }
+    .boton{
+        width: 250px;
+    }
+
+    .imagen-inicio{
+        width: 99%;
+    }
+
+    .imagen-galeria{
+        width: 99%;
+    }
+}
+
+/* Colocamos un "media queries" para que desde 480 pixeles para abajo acomode la web para una vista mobile horizontal */
+@media (max-width:480px) {
+
+    /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+
+    iframe{
+        margin: 30px;
+        width: 75%;
+    }
+
+    form{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    fieldset{
+        margin: 20px;
+    }
+
+    .boton-limpiar{
+        width: 200px;
+    }
+    .boton{
+        width: 250px;
+    }
+
+    .imagen-inicio{
+        width: 99%;
+    }
+
+    .imagen-galeria{
+        width: 99%;
+    }
+}
+
+/* Colocamos un "media queries" para que desde 600 pixeles para abajo acomode la web para una vista de tablet pequeña */
+@media (max-width:600px) {
+
+    /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+
+    iframe{
+        margin: 30px;
+        width: 75%;
+    }
+
+    form{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    fieldset{
+        margin: 20px;
+    }
+
+    div input{
+        padding: 10px 100px;
+        border: solid  black;
+        border-radius: 10px;
+    }
+
+    .boton-limpiar{
+        width: 200px;
+    }
+    .boton{
+        width: 250px;
+    }
+
+    .imagen-inicio{
+        width: 99%;
+    }
+
+    .imagen-galeria{
+        width: 99%;
+    }
+}
+
+/* Colocamos un "media queries" para que desde 1024 pixeles para abajo acomode la web para una vista de tablet grande */
+@media (max-width:1024px) {
+
+    /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+
+    iframe{
+        margin: 30px;
+        width: 75%;
+    }
+
+    form{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    fieldset{
+        margin: 20px;
+    }
+
+    div input{
+        padding: 10px 200px;
+        border: solid  black;
+        border-radius: 10px;
+    }
+
+    .boton-limpiar{
+        width: 200px;
+    }
+    .boton{
+        width: 250px;
+    }
+
+    .imagen-inicio{
+        width: 99%;
+    }
+
+    .imagen-galeria{
+        width: 99%;
+    }
+}

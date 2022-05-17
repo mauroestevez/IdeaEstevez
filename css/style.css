@@ -1,272 +1,282 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+@charset "UTF-8";
 /* Comenzamos utilizando Grid para estructurar nuestro <body>. */
-.grid{
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
+.grid {
+  display: grid;
+  grid-template-areas: "nav nav nav" "main main main" "main main main" "footer footer footer"; }
 
 /* Activamos Grid en el <nav>. */
-.grid__nav{
-    grid-area: nav;
-}
+.grid__nav {
+  grid-area: nav; }
 
 /* Activamos Grid en el <main>.*/
-.grid__main{
-    grid-area: main;
-}
+.grid__main {
+  grid-area: main; }
 
 /* Activamos Grid en el <footer>. */
-.grid__footer{
-    grid-area: footer;
-}
-
-/* Utilizamos Flex para acomodar las imagenes en la pagina "inicio". */
-.imagenes-inicio{
-    display: flex;
-    gap: 20px 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-/* Customizamos un poco cada una de estas imagenes con una clase. */
-.imagen-inicio{
-    border: solid 4px black;
-    margin: 10px 0px;
-    width: 450px;
-    height: 300px;
-}
-
-/* Utilizamos Flex para acomodar las imagenes en la pagina "galeria". */
-.imagenes-galeria{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/* A continuación armamos nuestro menu navegable... */
-
-header{
-    width: 100%;
-}
-.bg-color{
-    background-color: red;
-}
-
-
-/* Utilizamos Flex para acomodar los <li> dentro del <ul>. */
-.main-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-/* Customizamos los botones del menu. */
-a{
-    margin: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-block;
-    width: 150px;
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-family: 'Roboto', sans-serif;
-    border: solid 2px black;
-    padding: 30px 40px 30px 40px;
-    border-radius: 15px;
-}
-
-/* Le colocamos una transición para cuando posamos el mouse. */
-a:hover{
-    background-color: black;
-    color: white;
-    transition: .6s;
-}
-a:hover{
-    width: 180px;
-    transition: .6s;
-}
-
-/* Ocultamos el checkbox que utilizaremos para el menu desplegable. */
-#btn-menu{
-    display: none;
-}
-
-/* Ocultamos el <label> (hamburguesa) del menu desplegable y le damos un tamaño. */
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
-
-/* Le colocamos un pointer a la "hamburguesa" */
-header label:hover{
-    cursor: pointer;
-}
-
-/* Customizamos un poco la etiqueta <h1> y las clases que definimos para dar estilos particulares... */
-h1{
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    margin: 100px 50px 100px 50px;
-    padding-top: 75px;
-}
-.h1-inicio{
-    margin: 0;
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
-    animation: swing;
-    animation-duration: 1s;
-}
-
-/* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
-h2{
-    text-align: left;
-    font-size: x-large;
-    color: black;
-    margin: 100px 50px 100px 50px;
-    font-family: 'Roboto', sans-serif;
-}
-.h2-inicio{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-}
-.h2-historia{
-    margin: 20px 30px 20px 30px ;
-    font-family: 'Roboto', sans-serif;
-}
-.h2-galeria{
-    margin: 0;
-    margin-bottom: 5px;
-}
-
-/* Customizamos un poco la etiqueta <p> */
-p{
-    text-align: left;
-    margin: 15px 50px;
-    line-height: 25px;
-    text-indent: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Ponemos un color de fondo para el <body> con un gradiente */
-.fondo-body{
-    background-image: linear-gradient(red, orange);
-}
-
-
-/* Le damos forma a las imagenes de "galeria" */
-.imagen-galeria{
-    border: solid 4px black;
-    width: 450px;
-    height: 300px;
-}
-
-/* Ubicamos mejor nuestro mapa y le redondeamos los bordes */
-iframe{
-    width: 90%;
-    height: 500px;
-    margin: 0 100px 20px 100px;
-    border-radius: 10px;
-}
+.grid__footer {
+  grid-area: footer; }
 
 /* Comenzamos a darle estilo a nuestro formulario utilizando box modeling y Flex dentro de la etiqueta <fieldset>. */
-form{
-    margin: 0 0 200px 300px;
-    width: 100%;
-    height: 500px;
-}
-fieldset{
-    border: none;
-    width: 90%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-fieldset legend{
-    font-size: x-large;
-}
-fieldset label{
-    display: block;
-}
-fieldset input{
+form {
+  margin: 0 0 200px 300px;
+  width: 100%;
+  height: 500px; }
+
+fieldset {
+  border: none;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  fieldset legend {
+    font-size: x-large; }
+  fieldset label {
+    display: block; }
+  fieldset input {
     padding: 10px 60px;
     border: solid  black;
-    border-radius: 10px;
-}
+    border-radius: 10px; }
+
 /* Utilizamos algunas clases para aplicar estilos especificos a los botones */
-.boton-limpiar{
-    width: 300px;
-    color: white;
+.boton-limpiar {
+  width: 300px;
+  color: white;
+  background-color: black;
+  border: solid 1px black; }
+
+.boton {
+  width: 320px;
+  color: white;
+  background-color: black;
+  border: solid 1px black; }
+
+/* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
+.h2-galeria {
+  margin: 0;
+  margin-bottom: 5px; }
+
+/* Utilizamos Flex para acomodar las imagenes en la pagina "galeria". */
+.imagenes-galeria {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+
+/* Le damos forma a las imagenes de "galeria" */
+.imagen-galeria {
+  border: solid 4px black;
+  width: 450px;
+  height: 300px; }
+
+/* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
+.h2-historia {
+  margin: 20px 30px 20px 30px;
+  font-family: 'Roboto', sans-serif; }
+
+/* Customizamos un poco la etiqueta <h1> y las clases que definimos para dar estilos particulares... */
+.h1-inicio {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  animation: swing;
+  animation-duration: 1s; }
+
+/* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
+.h2-inicio {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px; }
+
+/* Utilizamos Flex para acomodar las imagenes en la pagina "inicio". */
+.imagenes-inicio {
+  display: flex;
+  gap: 20px 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/* Customizamos un poco cada una de estas imagenes con una clase. */
+.imagen-inicio {
+  border: solid 4px black;
+  margin: 10px 0px;
+  width: 450px;
+  height: 300px; }
+
+/* Ubicamos mejor nuestro mapa y le redondeamos los bordes */
+iframe {
+  width: 90%;
+  height: 500px;
+  margin: 0 100px 20px 100px;
+  border-radius: 10px; }
+
+/* A continuación armamos nuestro menu navegable... */
+header {
+  width: 100%; }
+
+.bg-color {
+  background-color: red; }
+
+/* Utilizamos Flex para acomodar los <li> dentro del <ul>. */
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none; }
+
+/* Customizamos los botones del menu. */
+a {
+  margin: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  border: solid 2px black;
+  padding: 30px 40px 30px 40px;
+  border-radius: 15px; }
+  a:hover {
     background-color: black;
-    border: solid 1px black;
-}
-.boton{
-    width: 320px;
     color: white;
-    background-color: black;
-    border: solid 1px black;
-}
+    transition: .6s;
+    width: 180px; }
+
+/* Customizamos un poco la etiqueta <h1> */
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin: 100px 50px 100px 50px;
+  padding-top: 75px; }
+
+/* Customizamos un poco la etiqueta <h2> */
+h2 {
+  text-align: left;
+  font-size: x-large;
+  color: black;
+  margin: 100px 50px 100px 50px;
+  font-family: 'Roboto', sans-serif; }
+
+/* Customizamos un poco la etiqueta <p> */
+p {
+  text-align: left;
+  margin: 15px 50px;
+  line-height: 25px;
+  text-indent: 20px;
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Ponemos un color de fondo para el <body> con un gradiente */
+.fondo-body {
+  background-image: linear-gradient(red, orange); }
 
 /* Le damos estilo al <footer> utilizando una etiqueta y ademas los posicionamos donde queremos con el "position: absolute", utilizando el "relative" ya colocado en el <body> */
-.footer{
-    background-color: black;
-    color: white;
-    bottom: 0%; 
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-}
+.footer {
+  background-color: black;
+  color: white;
+  bottom: 0%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
 
-/* Colocamos un "media queries" para que desde 480 pixeles para abajo acomode la web para una vista mobile */
-@media (max-width:480px) {
+/* Colocamos un "media queries" para que desde 320 pixeles para abajo acomode la web para una vista mobile vertical */
+@media (max-width: 320px) {
+  /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+  iframe {
+    margin: 30px;
+    width: 75%; }
+  form {
+    margin: 0;
+    margin-bottom: 40px; }
+  fieldset {
+    margin: 20px; }
+  div input {
+    padding: 10px 30px;
+    border: solid  black;
+    border-radius: 10px; }
+  .boton-limpiar {
+    width: 200px; }
+  .boton {
+    width: 250px; }
+  .imagen-inicio {
+    width: 99%; }
+  .imagen-galeria {
+    width: 99%; } }
 
-    /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+/* Colocamos un "media queries" para que desde 480 pixeles para abajo acomode la web para una vista mobile horizontal */
+@media (max-width: 480px) {
+  /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+  iframe {
+    margin: 30px;
+    width: 75%; }
+  form {
+    margin: 0;
+    margin-bottom: 40px; }
+  fieldset {
+    margin: 20px; }
+  .boton-limpiar {
+    width: 200px; }
+  .boton {
+    width: 250px; }
+  .imagen-inicio {
+    width: 99%; }
+  .imagen-galeria {
+    width: 99%; } }
 
-    iframe{
-        margin: 30px;
-        width: 80%;
-    }
+/* Colocamos un "media queries" para que desde 600 pixeles para abajo acomode la web para una vista de tablet pequeña */
+@media (max-width: 600px) {
+  /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+  iframe {
+    margin: 30px;
+    width: 75%; }
+  form {
+    margin: 0;
+    margin-bottom: 40px; }
+  fieldset {
+    margin: 20px; }
+  div input {
+    padding: 10px 100px;
+    border: solid  black;
+    border-radius: 10px; }
+  .boton-limpiar {
+    width: 200px; }
+  .boton {
+    width: 250px; }
+  .imagen-inicio {
+    width: 99%; }
+  .imagen-galeria {
+    width: 99%; } }
 
-    form{
-        margin: 0;
-        margin-bottom: 40px;
-    }
-    fieldset{
-        margin: 20px;
-    }
-
-    .boton-limpiar{
-        width: 200px;
-    }
-    .boton{
-        width: 250px;
-    }
-
-    .imagen-inicio{
-        width: 99%;
-    }
-
-    .imagen-galeria{
-        width: 99%;
-    }
-}
+/* Colocamos un "media queries" para que desde 1024 pixeles para abajo acomode la web para una vista de tablet grande */
+@media (max-width: 1024px) {
+  /* Acomodamos el box modeling y los tamaños de las imagenes, iframe y del formulario de contacto para que se ajusten adecuadamente al nuevo tamaño. */
+  iframe {
+    margin: 30px;
+    width: 75%; }
+  form {
+    margin: 0;
+    margin-bottom: 40px; }
+  fieldset {
+    margin: 20px; }
+  div input {
+    padding: 10px 200px;
+    border: solid  black;
+    border-radius: 10px; }
+  .boton-limpiar {
+    width: 200px; }
+  .boton {
+    width: 250px; }
+  .imagen-inicio {
+    width: 99%; }
+  .imagen-galeria {
+    width: 99%; } }

@@ -1,0 +1,21 @@
+/* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
+.h2-galeria{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* Utilizamos Flex para acomodar las imagenes en la pagina "galeria". */
+.imagenes-galeria{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Le damos forma a las imagenes de "galeria" */
+.imagen-galeria{
+    border: solid 4px black;
+    width: 450px;
+    height: 300px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ideaestevez",
+  "version": "1.0.0",
+  "description": "Sitio para los fanaticos de los Mini Cooper",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroestevez/IdeaEstevez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauroestevez/IdeaEstevez/issues"
+  },
+  "homepage": "https://github.com/mauroestevez/IdeaEstevez#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

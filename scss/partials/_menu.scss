@@ -1,0 +1,40 @@
+/* A continuación armamos nuestro menu navegable... */
+
+header{
+    width: 100%;
+}
+.bg-color{
+    background-color: red;
+}
+
+
+/* Utilizamos Flex para acomodar los <li> dentro del <ul>. */
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* Customizamos los botones del menu. */
+a{
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    border: solid 2px black;
+    padding: 30px 40px 30px 40px;
+    border-radius: 15px;
+    &:hover{
+        background-color: black;
+        color: white;
+        transition: .6s;
+        width: 180px;
+    }
+}
+
