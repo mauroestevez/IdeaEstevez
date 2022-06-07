@@ -1,26 +1,29 @@
+@import "../variables/variables";
+
+
 /* Customizamos un poco la etiqueta <h1> */
 h1{
     text-align: center;
     font-size: xx-large;
     text-decoration-line: underline;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: $color;
     margin: 100px 50px 100px 50px;
     padding-top: 75px;
 }
 
 /* Customizamos un poco la etiqueta <h2> */
 h2{
-    text-align: left;
+    text-align: map-get($estilos, text-align);
     font-size: x-large;
-    color: black;
+    color: $color;
     margin: 100px 50px 100px 50px;
     font-family: 'Roboto', sans-serif;
 }
 
 /* Customizamos un poco la etiqueta <p> */
 p{
-    text-align: left;
+    text-align: map-get($estilos, text-align);
     margin: 15px 50px;
     line-height: 25px;
     text-indent: 20px;

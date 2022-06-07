@@ -1,3 +1,5 @@
+@import "../variables/variables";
+
 /* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
 .h2-galeria{
     margin: 0;
@@ -15,7 +17,6 @@
 
 /* Le damos forma a las imagenes de "galeria" */
 .imagen-galeria{
-    border: solid 4px black;
-    width: 450px;
-    height: 300px;
+    border: solid 4px $color;
+    @include sizes(450px, 300px);
 }

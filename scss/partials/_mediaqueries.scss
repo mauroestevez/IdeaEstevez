@@ -1,5 +1,4 @@
-
-
+@import "../variables/variables";
 
 
 /* Colocamos un "media queries" para que desde 320 pixeles para abajo acomode la web para una vista mobile vertical */
@@ -15,22 +14,25 @@
     form{
         margin: 0;
         margin-bottom: 40px;
-    }
-    fieldset{
-        margin: 20px;
-    }
-
-    div input{
-        padding: 10px 30px;
-        border: solid  black;
-        border-radius: 10px;
+        fieldset{
+            margin: 10px;
+            div{
+                input{
+                    padding: 10px 30px;
+                    border: solid black;
+                    border-radius: 10px;
+                }
+            }
+        }
     }
 
     .boton-limpiar{
-        width: 200px;
+        width: 80%;
+        padding: 10px 50px;
     }
     .boton{
-        width: 250px;
+        width: 80%;
+        padding: 10px 50px;
     }
 
     .imagen-inicio{
@@ -92,12 +94,17 @@
     }
     fieldset{
         margin: 20px;
-    }
-
-    div input{
-        padding: 10px 100px;
-        border: solid  black;
-        border-radius: 10px;
+        div{
+            input{
+                margin: 0 10px;
+                padding: 10px 60px;
+                border: solid black;
+                border-radius: 10px;
+            }
+        }
+        input{
+            padding: 10px 200px;
+        }
     }
 
     .boton-limpiar{
@@ -135,8 +142,8 @@
     }
 
     div input{
-        padding: 10px 200px;
-        border: solid  black;
+        padding: 10px 150px;
+        border: solid black;
         border-radius: 10px;
     }
 

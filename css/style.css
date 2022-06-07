@@ -31,25 +31,26 @@ fieldset {
   justify-content: space-between; }
   fieldset legend {
     font-size: x-large; }
-  fieldset label {
+  fieldset div label {
     display: block; }
+  fieldset div input {
+    padding: 10px 200px;
+    border: solid black;
+    border-radius: 10px; }
   fieldset input {
-    padding: 10px 60px;
-    border: solid  black;
+    padding: 10px 200px;
+    border: solid black;
     border-radius: 10px; }
 
 /* Utilizamos algunas clases para aplicar estilos especificos a los botones */
-.boton-limpiar {
+.boton-limpiar, .boton {
   width: 300px;
   color: white;
   background-color: black;
   border: solid 1px black; }
 
 .boton {
-  width: 320px;
-  color: white;
-  background-color: black;
-  border: solid 1px black; }
+  width: 320px; }
 
 /* Customizamos un poco la etiqueta <h2> y las clases que definimos para dar estilos particulares... */
 .h2-galeria {
@@ -202,16 +203,18 @@ p {
   form {
     margin: 0;
     margin-bottom: 40px; }
-  fieldset {
-    margin: 20px; }
-  div input {
-    padding: 10px 30px;
-    border: solid  black;
-    border-radius: 10px; }
-  .boton-limpiar {
-    width: 200px; }
+    form fieldset {
+      margin: 10px; }
+      form fieldset div input {
+        padding: 10px 30px;
+        border: solid black;
+        border-radius: 10px; }
+  .boton-limpiar, .boton {
+    width: 80%;
+    padding: 10px 50px; }
   .boton {
-    width: 250px; }
+    width: 80%;
+    padding: 10px 50px; }
   .imagen-inicio {
     width: 99%; }
   .imagen-galeria {
@@ -228,7 +231,7 @@ p {
     margin-bottom: 40px; }
   fieldset {
     margin: 20px; }
-  .boton-limpiar {
+  .boton-limpiar, .boton {
     width: 200px; }
   .boton {
     width: 250px; }
@@ -248,11 +251,14 @@ p {
     margin-bottom: 40px; }
   fieldset {
     margin: 20px; }
-  div input {
-    padding: 10px 100px;
-    border: solid  black;
-    border-radius: 10px; }
-  .boton-limpiar {
+    fieldset div input {
+      margin: 0 10px;
+      padding: 10px 60px;
+      border: solid black;
+      border-radius: 10px; }
+    fieldset input {
+      padding: 10px 200px; }
+  .boton-limpiar, .boton {
     width: 200px; }
   .boton {
     width: 250px; }
@@ -273,10 +279,10 @@ p {
   fieldset {
     margin: 20px; }
   div input {
-    padding: 10px 200px;
-    border: solid  black;
+    padding: 10px 150px;
+    border: solid black;
     border-radius: 10px; }
-  .boton-limpiar {
+  .boton-limpiar, .boton {
     width: 200px; }
   .boton {
     width: 250px; }

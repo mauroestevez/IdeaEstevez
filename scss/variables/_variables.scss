@@ -1,0 +1,13 @@
+// Definimos variables, mapa y mixin
+
+$color: black;
+
+$estilos: (
+    color: black,
+    text-align: left,
+);
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}

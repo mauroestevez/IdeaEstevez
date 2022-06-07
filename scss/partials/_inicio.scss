@@ -1,3 +1,5 @@
+@import "../variables/variables";
+
 /* Customizamos un poco la etiqueta <h1> y las clases que definimos para dar estilos particulares... */
 .h1-inicio{
     margin-top: 75px;
@@ -28,8 +30,7 @@
 
 /* Customizamos un poco cada una de estas imagenes con una clase. */
 .imagen-inicio{
-    border: solid 4px black;
+    border: solid 4px $color;
     margin: 10px 0px;
-    width: 450px;
-    height: 300px;
+    @include sizes(450px, 300px);
 }

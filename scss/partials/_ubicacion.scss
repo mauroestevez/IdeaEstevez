@@ -1,7 +1,9 @@
+@import "../variables/variables";
+
+
 /* Ubicamos mejor nuestro mapa y le redondeamos los bordes */
 iframe{
-    width: 90%;
-    height: 500px;
+    @include sizes(90%, 500px);
     margin: 0 100px 20px 100px;
     border-radius: 10px;
 }
